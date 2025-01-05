@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>For My Love</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe6f0;
+      color: #6a1b9a;
+      overflow: hidden;
+      text-align: center;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      background-image: url('./WhatsApp\ Image\ 2024-12-23\ at\ 16.08.09_4de8b760.jpg');
+      background-size: cover;
+      background-position: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: white;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+      margin-bottom: 20px;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: white;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 20px;
+      animation: fadeInText 2s ease-in-out;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .heart {
+      font-size: 6rem;
+      color: #ff4081;
+      animation: heartAnimation 3s infinite alternate;
+    }
+
+    .button {
+      background-color: #ff4081;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      animation: fadeInButton 3s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: #ff1e60;
+      transform: scale(1.1);
+    }
+
+    .floating-hearts {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      animation: floatHearts 10s ease-in-out infinite;
+    }
+
+    .heart-emoji {
+      font-size: 3rem;
+      color: #ff6699;
+      position: absolute;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .images-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: imageSlideIn 2s ease-in-out;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: bounceIn 2s ease-out;
+    }
+
+  #fallingContainer {
+  position: relative;
+  height: auto; /* Set the height where words will fall */
+  width: 100%;
+  overflow: hidden;
+}
+
+.fallingWord {
+  position: absolute;
+  top: -50px; /* Start above the screen */
+  font-size: 24px;
+  color: #333;
+  opacity: 0;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInText {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+
+    @keyframes fadeInButton {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes heartAnimation {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(15deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes floatHearts {
+      0% { top: -10%; }
+      100% { top: 100%; }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-300px) scale(1.5); opacity: 0; }
+    }
+
+    @keyframes imageSlideIn {
+      0% { transform: translateY(100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0); opacity: 0; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes combinedAnimation {
+  0% { transform: translateY(0); opacity: 0; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
+.MyText {
+  animation: combinedAnimation 3s ease-in-out infinite;
+}
+
+  </style>
+</head>
+<body id="fallingContainer">
+
+  <h1 style="color: #6a1b9a;">To My Beautiful Love 💖</h1>
+  <p style="color: #ca172c;padding-top: 25px;
+  margin-left: 400px; text-decoration:#6a1b9a;
+  font-weight: 700;
+  font-style:oblique;
+  text-shadow: #6a1b9a
+  ;" class="MyText">
+    Every day with you feels like a fairy tale. Your smile lights up my world, and your presence fills my heart with joy. I am so lucky to have you. I love you endlessly.
+  </p>
+
+  <div class="heart">❤️</div>
+
+  <a href="#" class="button" id="showerButton">I Love You</a>
+
+  <div class="images-container">
+    <div class="image">
+      <img src="./WhatsApp Image 2024-12-20 at 16.56.45_80833dba.jpg" alt="Her Image 1">
+    </div>
+    <div class="image">
+      <img src="./WhatsApp Image 2024-12-19 at 22.50.15_cbeda405.jpg" alt="Her Image 2">
+    </div>
+    <div class="image">
+      <img src="./WhatsApp Image 2024-12-31 at 00.05.11_914bfa0e.jpg" alt="Her Image 3">
+    </div>
+  </div>
+
+  <div class="floating-hearts">
+    <div class="heart-emoji" style="left: 10%; animation-delay: 0s;">❤️</div>
+    <div class="heart-emoji" style="left: 30%; animation-delay: 2s;">💖</div>
+    <div class="heart-emoji" style="left: 50%; animation-delay: 4s;">💓</div>
+    <div class="heart-emoji" style="left: 70%; animation-delay: 6s;">❤️</div>
+    <div class="heart-emoji" style="left: 90%; animation-delay: 8s;">💗</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
